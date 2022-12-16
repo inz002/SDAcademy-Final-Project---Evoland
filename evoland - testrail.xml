@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Evoland</name>
+		<description>Unsorted Tests</description>
+						<cases>
+												<case>
+				<id>C19</id>
+				<title>Placeholder</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Main Menu</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Checking main menu contents.</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Boot up the game.
+Does Main Menu have:</preconds>
+										<steps_separated><step>
+<index>1</index><content>New Game</content><expected>Yes</expected></step>
+<step>
+<index>2</index><content>Continue</content><expected>Yes</expected></step>
+<step>
+<index>3</index><content>Options</content><expected>Yes</expected></step>
+<step>
+<index>4</index><content>Exit Game</content><expected>Yes</expected></step>
+<step>
+<index>5</index><content>Game version at bottom left corner.</content><expected>Yes</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C2</id>
+				<title>The New Game option should send you to the start of Forest</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>Continue option should take you to the last save the game has generated.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C35</id>
+				<title>Options menu button functionality.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C4</id>
+				<title>Checking options menu contents.</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Navigate to options menu from main menu by pressing arrow keys and enter or by clicking the options.
+Does it have following components:</preconds>
+										<steps_separated><step>
+<index>1</index><content>Music</content><expected>Yes</expected></step>
+<step>
+<index>2</index><content>Sounds</content><expected>Yes</expected></step>
+<step>
+<index>3</index><content>Language - &quot;Selected language&quot;(By default English)</content><expected>Yes</expected></step>
+<step>
+<index>4</index><content>Gamepad(grayed out if no gamepad)</content><expected>Yes</expected></step>
+<step>
+<index>5</index><content>Back</content><expected>Yes</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C5</id>
+				<title>Music audio level should change if you change the setting.</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references>C4</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Open options menu.
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Is music audio level changing while adjusting it with left and right key.</content><expected>Yes</expected></step>
+<step>
+<index>2</index><content>Does music audio level go from 10 to off while clicking it.</content><expected>Yes</expected></step>
+<step>
+<index>3</index><content>Does the music audio level go from 10 to off while clicking it?</content><expected>Yes</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C6</id>
+				<title>Sound audio level should change if you change the setting.</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Open options menu.
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Is music audio level changing while adjusting it with left and right key.
+
+</content><expected>Yes</expected></step>
+<step>
+<index>2</index><content>Does music audio level go from 10 to off while clicking it.</content><expected>Yes</expected></step>
+<step>
+<index>3</index><content>Does the sound audio level go from 10 to off while clicking it?</content><expected>Yes</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C7</id>
+				<title>Language should have 3 possible options: English, German, French</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Navigate to options menu.</preconds>
+										<steps>1. Navigate to language option with arrow keys.
+2. Interact with the language option with Enter key.
+3. Interact with the language option with left mouse button while hovering on it.</steps>
+										<expected>When switching between languages, the change should be visible after each input. When switching between languages, the change should be visible after each input.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C8</id>
+				<title>When switching between languages, the change should be visible after each input. When switching between languages, the change should be visible after each input.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C10</id>
+				<title>Gamepad should be grayed out if you have no gamepad connected.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C11</id>
+				<title>Exit should terminate the program.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Individual Gameplay Components</name>
+		<description>These tests are testing each gameplay function separately.</description>
+						<cases>
+												<case>
+				<id>C12</id>
+				<title>After loading forest the player should be only able to move right with the input keys D or Right Arrow.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>After walking right and completing the objective we should be able to move our character only left and right.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C14</id>
+				<title>After moving the character left and completing the objective we should be able to move in 4 directions up, down, left and right.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C15</id>
+				<title>Using 4 directional movements we should be able to unlock screen scrolling by moving to the next chest objective.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C16</id>
+				<title>After that we unlock the Sound effects(SFX) by moving to the chest right side.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C17</id>
+				<title>While moving with directional keys we should hear stepping sounds.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C18</id>
+				<title>Check if we can unlock smoother scrolling by moving to the chest down left.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C20</id>
+				<title>Check if we unlock the sword after moving to the chest in bottom right. Check if sword attack animation and sound effect triggers after acquiring the sword.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C21</id>
+				<title>Check if we can cut bushes with a sword.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C22</id>
+				<title>Check if enemy units spawn after unlocking the chest on the right after cutting the bush.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C23</id>
+				<title>Check if you can damage enemy units.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C24</id>
+				<title>Check if you take damage from enemy units.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C25</id>
+				<title>Check if you get a graphics upgrade after unlocking the next chest on top right.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C26</id>
+				<title>Check if you can move diagonally after unlocking the free movement chest at left top.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C27</id>
+				<title>Go to the 2 knight statues and check if they take damage.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C28</id>
+				<title>Check if you can access the inventory screen after unlocking the inventory chest.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C29</id>
+				<title>Check if the game saves after unlocking overworld.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Gameplay Sections</name>
+		<description>This is where we test all the gameplay features in one session.</description>
+						<cases>
+												<case>
+				<id>C31</id>
+				<title>Unlock the Overworld with minimal requirements</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C32</id>
+				<title>Unlock the Overworld with  smooth scrolling and minimal requirements</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C33</id>
+				<title>Unlock the Overworld while doing every possible side activity you can find.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+															<case>
+				<id>C34</id>
+				<title>Unlock overworld while doing every possible side activity without smooth scrolling.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
